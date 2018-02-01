@@ -64,42 +64,51 @@ console.log(trip);
 
 let result = 0;
 
-for (let i = 0; i < 4; i++) {
-    const beach = parseInt(prompt('My dog\'s name is Journey by the way. Can you guess how many times I\'ve taken him to the beach?'));
-    if (beach === 0) {
-        console.log('Beach is: ' + beach);
-        alert('Try again!' );
-    } else if (beach > 6) {
-        console.log('Beach is: ' + beach);
-        alert('Maybe someday!');
-    } else if (beach < 6) {
-        console.log('Beach is: ' + beach);
-        alert('Try a little higher.');
-    } else if (beach === 6) {
-        console.log('Beach is: ' + beach);
-        alert('You got it! He loves to jump into those waves.');
-        result++;
-        break;
+function beachTrips() { 
+    for (let i = 0; i < 4; i++) {
+        const beach = parseInt(prompt('My dog\'s name is Journey by the way. Can you guess how many times I\'ve taken him to the beach?'));
+        if (beach === 0) {
+            console.log('Beach is: ' + beach);
+            alert('Try again!' );
+        } else if (beach > 6) {
+            console.log('Beach is: ' + beach);
+            alert('Maybe someday!');
+        } else if (beach < 6) {
+            console.log('Beach is: ' + beach);
+            alert('Try a little higher.');
+        } else if (beach === 6) {
+            console.log('Beach is: ' + beach);
+            alert('You got it! He loves to jump into those waves.');
+            result++;
+            break;
+        }
     }
 }
 
-const myPets = ['snake','cat','hampster'];
-for (let count = 1; count <= 6; count++) {
-    const guess = prompt('Can you guess what other pet\'s I have or have had? Hint: They definately would not have liked the beach.');
-    if (myPets.includes(guess)) {
-        console.log(guess + ' was one of my current/previous pets');
-        alert('Good Work! Right now I have a snake named Opalescence, a cat named Lynx, and an evil hampster named Chomper. Bet you can\'t guess why.');
-        result++;
-        break;
-    } else if (count > 5) {
-        console.log('Did not guess my current/previous pets');
-        alert('You were so close on a few! Right now I have a snake named Opalescence. I once had a cat named Lynx and an evil hampster named Chomper. Bet you can\'t guess why.');
-        break;
-    } else if (myPets.indexOf(guess) == -1) {
-        console.log(guess + ' was not one of my current/previous pets');
-        alert('Sorry, I\'ve never had one of those before. You have made ' + count + ' of 6 guesses!');
+beachTrips();
+
+function petKinds() {
+    const myPets = ['snake','cat','hampster'];
+    for (let count = 1; count <= 6; count++) {
+        const guess = prompt('Can you guess what other pet\'s I have or have had? Hint: They definately would not have liked the beach.');
+        if (myPets.includes(guess)) {
+            console.log(guess + ' was one of my current/previous pets');
+            alert('Good Work! Right now I have a snake named Opalescence, a cat named Lynx, and an evil hampster named Chomper. Bet you can\'t guess why.');
+            result++;
+            break;
+        } else if (count > 5) {
+            console.log('Did not guess my current/previous pets');
+            alert('You were so close on a few! Right now I have a snake named Opalescence. I once had a cat named Lynx and an evil hampster named Chomper. Bet you can\'t guess why.');
+            break;
+        } else if (myPets.indexOf(guess) == -1) {
+            console.log(guess + ' was not one of my current/previous pets');
+            alert('Sorry, I\'ve never had one of those before. You have made ' + count + ' of 6 guesses!');
+        }
     }
 }
+
+petKinds();
+
 if (result == 1) {
     alert('You got ' + result + ' out of 2 questions. Not bad.');
 } else if (result == 2) {;
