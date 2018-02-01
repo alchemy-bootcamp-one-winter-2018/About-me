@@ -1,14 +1,18 @@
 'use strict';
 
-const intro = prompt('Have you ever had a pet?').toLowerCase();
-if (intro === 'yes' || intro === 'y') {
-    alert('That\'s awesome! Pet\'s are so rewarding.');
-} else if (intro === 'no' || intro === 'n') {
-    alert('I am so sorry that you have never known the joy!');
-} else {
-    alert('What now?');
+function havePets() {
+    const intro = prompt('Have you ever had a pet?').toLowerCase();
+    if (intro === 'yes' || intro === 'y') {
+        alert('That\'s awesome! Pet\'s are so rewarding.');
+    } else if (intro === 'no' || intro === 'n') {
+        alert('I am so sorry that you have never known the joy!');
+    } else {
+        alert('What now?');
+    }
+    console.log(intro);
 }
-console.log(intro);
+
+havePets();
 
 const pet = prompt('What is your ideal pet?');
 alert(pet + ' huh? Those are pretty cool. I\'m a dog person myself.');
