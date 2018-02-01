@@ -6,9 +6,17 @@ body {
 section {
     text-align: center;
     border: 5px solid gray;
-    padding: 20px;
-    margin: 200px;
+    padding: 10%;
+    margin: 20%;
     background-color: #9F9F9F;
+}
+
+p {
+    font-weight: bold;
+}
+
+li {
+    text-align: left;
 }
 
 footer {
