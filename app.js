@@ -54,25 +54,33 @@ const name = prompt('What would you name your ' + breed + '?');
 alert('You would name your ' + pet + ' ' + name + '? Well, that\'s all right. To each their own.');
 console.log('Their pet\'s name is: ' + name);
 
-const funky = prompt('Are you a fan of funky pet names?').toLowerCase();
-if (funky === 'yes' || funky === 'y') {
-    alert('There are some pretty clever ones out there and some equally silly ones. I knew a dog once called Chunky Chew.');
-} else if (funky === 'no' || funky === 'n') {
-    alert('Well, with a ' + pet + ' named ' + name + ' you seem like a more mature pet namer.');
-} else {
-    alert('What now?');
+function funkyName() {
+    const funky = prompt('Are you a fan of funky pet names?').toLowerCase();
+    if (funky === 'yes' || funky === 'y') {
+        alert('There are some pretty clever ones out there and some equally silly ones. I knew a dog once called Chunky Chew.');
+    } else if (funky === 'no' || funky === 'n') {
+        alert('Well, with a ' + pet + ' named ' + name + ' you seem like a more mature pet namer.');
+    } else {
+        alert('What now?');
+    }
+    console.log(funky);
 }
-console.log(funky);
 
-const trip = prompt('Would you consider taking your ' + pet + ' on trips to faraway places?').toLowerCase();
-if (trip === 'yes' || trip === 'y') {
-    alert('I know I love having my dog buddy on vacation. He loves the beach especially.');
-} else if (trip === 'no' || trip === 'n') {
-    alert('Poor ' + name + ', you\'ve got them on a tight leash! Pun intended ;p');
-} else {
-    alert('What now?');
+funkyName();
+
+function petTrips() {
+    const trip = prompt('Would you consider taking your ' + pet + ' on trips to faraway places?').toLowerCase();
+    if (trip === 'yes' || trip === 'y') {
+        alert('I know I love having my dog buddy on vacation. He loves the beach especially.');
+    } else if (trip === 'no' || trip === 'n') {
+        alert('Poor ' + name + ', you\'ve got them on a tight leash! Pun intended ;p');
+    } else {
+        alert('What now?');
+    }
+    console.log(trip);
 }
-console.log(trip);
+
+petTrips();
 
 let result = 0;
 
