@@ -18,29 +18,37 @@ const pet = prompt('What is your ideal pet?');
 alert(pet + ' huh? Those are pretty cool. I\'m a dog person myself.');
 console.log('Their ideal pet is: ' + pet);
 
-const common = prompt('Are those common where you live?').toLowerCase();
-if (common === 'yes' || common === 'y') {
-    alert('Thought so, I can\'t imagine a place without a friendly ' + pet + ' around.');
-} else if (common === 'no' || common === 'n') {
-    alert('How interesting!');
-} else {
-    alert('What now?');
+function commonPets() {
+    const common = prompt('Are those common where you live?').toLowerCase();
+    if (common === 'yes' || common === 'y') {
+        alert('Thought so, I can\'t imagine a place without a friendly ' + pet + ' around.');
+    } else if (common === 'no' || common === 'n') {
+        alert('How interesting!');
+    } else {
+        alert('What now?');
+    }
+    console.log(common);
 }
-console.log(common);
+
+commonPets();
 
 const breed = prompt('What is the breed of your ' + pet + '?');
 alert('A ' + breed + '? Sounds gorgeous! I\'ve never heard of a ' + pet + ' like that before.');
 console.log('Their pet\'s breed is: ' + breed);
 
-const pure = prompt('Are you dead set on a pure breed?').toLowerCase();
-if (pure === 'yes' || pure === 'y') {
-    alert('Nothing wrong with that. Make sure you go through a reputable breeder!');
-} else if (pure === 'no' || pure === 'n') {
-    alert('Nothing wrong with that. Consider looking into your local shelter or rescue!');
-} else {
-    alert('What now?');
+function pureBreed() {
+    const pure = prompt('Are you dead set on a pure breed?').toLowerCase();
+    if (pure === 'yes' || pure === 'y') {
+        alert('Nothing wrong with that. Make sure you go through a reputable breeder!');
+    } else if (pure === 'no' || pure === 'n') {
+        alert('Nothing wrong with that. Consider looking into your local shelter or rescue!');
+    } else {
+        alert('What now?');
+    }
+    console.log(pure);
 }
-console.log(pure);
+
+pureBreed();
 
 const name = prompt('What would you name your ' + breed + '?');
 alert('You would name your ' + pet + ' ' + name + '? Well, that\'s all right. To each their own.');
