@@ -37,9 +37,14 @@ function commonPets() {
 
 commonPets();
 
-const breed = prompt('What is the breed of your ' + pet + '?');
-alert('A ' + breed + '? Sounds gorgeous! I\'ve never heard of a ' + pet + ' like that before.');
-console.log('Their pet\'s breed is: ' + breed);
+function petBreed() {
+    const whatBreed = prompt('What is the breed of your ' + pet + '?');
+    alert('A ' + whatBreed + '? Sounds gorgeous! I\'ve never heard of a ' + pet + ' like that before.');
+    console.log('Their pet\'s breed is: ' + whatBreed);
+}
+
+const breed = petBreed();
+console.log(breed);
 
 function pureBreed() {
     const pure = prompt('Are you dead set on a pure breed?').toLowerCase();
