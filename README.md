@@ -5,7 +5,7 @@ About Me- Guessing Game
 ## Overview
 A simple blend of question/answers in the form of prompt style inquires. The purpose of which is to practice basic HTML, CSS, and Javescript.
 
-Other contributors inclue: 
+Other contributors inclue: Stephanine Smith(app.js)
 
 ## Getting Started
 
