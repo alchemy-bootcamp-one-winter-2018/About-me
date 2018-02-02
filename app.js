@@ -14,9 +14,14 @@ function havePets() {
 
 havePets();
 
-const pet = prompt('What is your ideal pet?');
-alert(pet + ' huh? Those are pretty cool. I\'m a dog person myself.');
-console.log('Their ideal pet is: ' + pet);
+function petType(){
+    const idealPet = prompt('What is your ideal pet?');
+    alert(idealPet + ' huh? Those are pretty cool. I\'m a dog person myself.');
+    console.log('Their ideal pet is: ' + idealPet);
+}
+
+const pet = petType();
+console.log(pet);
 
 function commonPets() {
     const common = prompt('Are those common where you live?').toLowerCase();
