@@ -18,6 +18,7 @@ function petType(){
     const idealPet = prompt('What is your ideal pet?');
     alert(idealPet + ' huh? Those are pretty cool. I\'m a dog person myself.');
     console.log('Their ideal pet is: ' + idealPet);
+    return idealPet;
 }
 
 const pet = petType();
@@ -41,6 +42,7 @@ function petBreed() {
     const whatBreed = prompt('What is the breed of your ' + pet + '?');
     alert('A ' + whatBreed + '? Sounds gorgeous! I\'ve never heard of a ' + pet + ' like that before.');
     console.log('Their pet\'s breed is: ' + whatBreed);
+    return whatBreed;
 }
 
 const breed = petBreed();
@@ -60,9 +62,15 @@ function pureBreed() {
 
 pureBreed();
 
-const name = prompt('What would you name your ' + breed + '?');
-alert('You would name your ' + pet + ' ' + name + '? Well, that\'s all right. To each their own.');
-console.log('Their pet\'s name is: ' + name);
+function petName() {
+    const whatName = prompt('What would you name your ' + breed + '?');
+    alert('You would name your ' + pet + ' ' + whatName + '? Well, that\'s all right. To each their own.');
+    console.log('Their pet\'s name is: ' + whatName);
+    return whatName;
+}
+
+const name = petName();
+console.log(name);
 
 function funkyName() {
     const funky = prompt('Are you a fan of funky pet names?').toLowerCase();
@@ -94,7 +102,7 @@ petTrips();
 
 let result = 0;
 
-function beachTrips() { 
+function beachTrips() {
     for (let i = 0; i < 4; i++) {
         const beach = parseInt(prompt('My dog\'s name is Journey by the way. Can you guess how many times I\'ve taken him to the beach?'));
         if (beach === 0) {
