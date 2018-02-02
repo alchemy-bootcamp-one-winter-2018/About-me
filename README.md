@@ -1,19 +1,12 @@
 # Project Name
 
+About Me- Guessing Game
+
 ## Overview
-<!-- Provide a high level overview of what this application is and why you are building it, beyond the fact that it's an assignment. (i.e. What's your problem domain?) Also a good idea to include a link to a deployed or live version of your project. -->
+A simple blend of question/answers in the form of prompt style inquires. The purpose of which is to practice basic HTML, CSS, and Javescript.
+
+Other contributors inclue: 
 
 ## Getting Started
-<!-- What are the steps that a user must take in order to build this app on their own machine and get it running?-->
 
-
-<!--
-
-    Feel free to include other sections like "Features", "Known Bugs", "Acknowledgements".
-    
-    Here's a useful resource explaining why your README matters: 
-        https://medium.com/@meakaakka/a-beginners-guide-to-writing-a-kickass-readme-7ac01da88ab3
-    Here's a list of awesome README examples: 
-        https://github.com/matiassingers/awesome-readme
-
--->
+The most prominent aspect of the game surrounds the prompt(); command and blending basic yes/no questions as well as ones that take unique user input. 
